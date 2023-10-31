@@ -1,8 +1,5 @@
-```
-NAME: BALA MURUGAN
-REG NO:212222230017
-```
-# EXPERIMENT--05-INTERFACING-A-4X4-MATRIX-KEYPAD-AND-DISPLAY-THE-OUTPUT-ON-LCD
+
+# EXPERIMENT 05 INTERFACING A 4X4 MATRIX KEYPAD AND DISPLAY THE OUTPUT ON LCD
 
 ## Aim: 
 To Interface a 4X4 matrix keypad and show the output on 16X2 LCD display to ARM controller , and simulate it in Proteus
@@ -109,6 +106,10 @@ Jump to second line, position 2
 
 8.Check the execution of the output using Run Option.
 ### STM 32 CUBE PROGRAM
+```
+NAME: BALA MURUGAN
+REG NO:212222230017
+```
 ```
 #include "main.h"
 #include <stdbool.h>
