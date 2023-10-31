@@ -10,7 +10,7 @@ To Interface a 4X4 matrix keypad and show the output on 16X2 LCD display to ARM 
 STM32 CUBE IDE, Proteus 8 simulator .
 ## Theory:
 
-![image](https://github.com/vasanthkumarch/EXPERIMENT--05-INTERFACING-A-4X4-MATRIX-KEYPAD-AND-DISPLAY-THE-OUTPUT-ON-LCD/assets/36288975/2a4a795e-1674-4329-ae07-3f5e8d5073e2)
+<img src="https://github.com/vasanthkumarch/EXPERIMENT--05-INTERFACING-A-4X4-MATRIX-KEYPAD-AND-DISPLAY-THE-OUTPUT-ON-LCD/assets/36288975/2a4a795e-1674-4329-ae07-3f5e8d5073e2" width="450" height="450">
 
 4×4 Keypad Module Pin Diagram
  
@@ -36,9 +36,6 @@ These Keypad modules are made of thin, flexible membrane material. The 4 x4 keyp
 All the above mentioned LCD display will have 16 Pins and the programming approach is also the same and hence the choice is left to you. 
 Below is the Pinout and Pin Description of 16x2 LCD Module:
 
-![image](https://user-images.githubusercontent.com/36288975/233858086-7b1a88a2-f941-475c-86c2-b3bae68bdf7e.png)
-![image](https://user-images.githubusercontent.com/36288975/233857710-541ac1c2-786c-4dfc-b7b5-e3a4868a9cb6.png)
-![image](https://user-images.githubusercontent.com/36288975/233857733-05df5dbf-1a1e-479e-85bb-8014a39ad878.png)
 
 4-bit and 8-bit Mode of LCD:
 
@@ -53,77 +50,41 @@ There are some preset commands instructions in LCD, which we need to send to LCD
 
 Hex Code
 
-Command to LCD Instruction Register
+Command to LCD Instruction Register-0F
 
-0F
+LCD ON, cursor ON-01
 
-LCD ON, cursor ON
+Clear display screen-02
 
-01
+Return home-04
 
-Clear display screen
+Decrement cursor (shift cursor to left)-06
 
-02
+Increment cursor (shift cursor to right)-05
 
-Return home
+Shift display right-07
 
-04
+Shift display left-0E
 
-Decrement cursor (shift cursor to left)
+Display ON, cursor blinking-80
 
-06
+Force cursor to beginning of first line-C0
 
-Increment cursor (shift cursor to right)
+Force cursor to beginning of second line-38
 
-05
+2 lines and 5×7 matrix-83
 
-Shift display right
+Cursor line 1 position 3-3C
 
-07
+Activate second line-08
 
-Shift display left
+Display OFF, cursor OFF-C1
 
-0E
+Jump to second line, position 1-OC
 
-Display ON, cursor blinking
+Display ON, cursor OFF-C1
 
-80
-
-Force cursor to beginning of first line
-
-C0
-
-Force cursor to beginning of second line
-
-38
-
-2 lines and 5×7 matrix
-
-83
-
-Cursor line 1 position 3
-
-3C
-
-Activate second line
-
-08
-
-Display OFF, cursor OFF
-
-C1
-
-Jump to second line, position 1
-
-OC
-
-Display ON, cursor OFF
-
-C1
-
-Jump to second line, position 1
-
-C2
+Jump to second line, position 1-C2
 
 Jump to second line, position 2
  
@@ -416,14 +377,14 @@ void assert_failed(uint8_t *file, uint32_t line)
 ```
 ## Output screen shots of proteus  :
 ### BUTTON OFF
- ![image](https://github.com/Bala1511/EXPERIMENT--05-INTERFACING-A-4X4-MATRIX-KEYPAD-AND-DISPLAY-THE-OUTPUT-ON-LCD/assets/118680410/7d35a9f2-d211-4c7e-bac3-e2ecd01b3952)
+ <img src="https://github.com/Bala1511/EXPERIMENT--05-INTERFACING-A-4X4-MATRIX-KEYPAD-AND-DISPLAY-THE-OUTPUT-ON-LCD/assets/118680410/7d35a9f2-d211-4c7e-bac3-e2ecd01b3952" width="450" height="450">
  ### BUTTON ON
- ![image](https://github.com/Bala1511/EXPERIMENT--05-INTERFACING-A-4X4-MATRIX-KEYPAD-AND-DISPLAY-THE-OUTPUT-ON-LCD/assets/118680410/af58da65-d10c-4af1-b254-36646c95ab85)
+ <img src="https://github.com/Bala1511/EXPERIMENT--05-INTERFACING-A-4X4-MATRIX-KEYPAD-AND-DISPLAY-THE-OUTPUT-ON-LCD/assets/118680410/af58da65-d10c-4af1-b254-36646c95ab85" width="450" height="450">
 
 
  
  ## CIRCUIT DIAGRAM (EXPORT THE GRAPHICS TO PDF AND ADD THE SCREEN SHOT HERE): 
- ![image](https://github.com/Bala1511/EXPERIMENT--05-INTERFACING-A-4X4-MATRIX-KEYPAD-AND-DISPLAY-THE-OUTPUT-ON-LCD/assets/118680410/9edb71d0-c2e2-49be-989f-ae8a3c1bb9c7)
+ <img src="https://github.com/Bala1511/EXPERIMENT--05-INTERFACING-A-4X4-MATRIX-KEYPAD-AND-DISPLAY-THE-OUTPUT-ON-LCD/assets/118680410/9edb71d0-c2e2-49be-989f-ae8a3c1bb9c7" width="450" height="450">
 
 ## Result :
 Interfacing a 4x4 keypad with ARM microcontroller are simulated in proteus and the results are verified.
